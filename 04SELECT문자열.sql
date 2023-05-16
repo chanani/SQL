@@ -43,7 +43,7 @@ SELECT FIRST_NAME, TO_CHAR(HIRE_DATE, 'YYMMDD')FROM EMPLOYEES ORDER BY FIRST_NAM
 --문제 2.
 --EMPLOYEES 테이블 에서 phone_numbe컬럼은 ###.###.####형태로 저장되어 있다
 --여기서 처음 세 자리 숫자 대신 서울 지역변호 (02)를 붙여 전화 번호를 출력하도록 쿼리를 작성하세요
-SELECT  CONCAT('02', SUBSTR(PHONE_NUMBER, 4))   FROM EMPLOYEES;
+SELECT  CONCAT('(02)', SUBSTR(PHONE_NUMBER, 4)) AS num  FROM EMPLOYEES;
 
 
 --문제 3.
